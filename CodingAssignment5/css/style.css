@@ -200,8 +200,3 @@ input[type="radio"] {
   margin: 0;
 }
 
-@media (max-width: 800px) {
-  [class*="col"] {
-    width: 100% !important;
-  }
-}
