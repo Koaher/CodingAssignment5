@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -6,18 +5,17 @@
 [class*="col"] {
   float: left;
   padding: 10px 15px;
-  background-color: rgba(255, 255, 255, 0.82);
-  /* deliberate design element: thin grid lines so the cells read like the wireframe */
-  border-top: 1px solid #0b4f6c;
-  border-left: 1px solid #0b4f6c;
+  background-color: rgba(15, 48, 64, 0.92);
+  border-top: 1px solid #2f6f8c;
+  border-left: 1px solid #2f6f8c;
 }
 
 .row {
-  border-right: 1px solid #0b4f6c;
+  border-right: 1px solid #2f6f8c;
 }
 
 #bottom {
-  border-bottom: 1px solid #0b4f6c;
+  border-bottom: 1px solid #2f6f8c;
 }
 
 .row::after {
@@ -35,21 +33,13 @@
   display: none;
 }
 
-/* 
-div {
-  border: double cornflowerblue;
-}
-*/
-
-/* ---------- Page ---------- */
 body {
   margin: 0;
-  background-color: #89CFF0;
-  background-image: url(../images/backgroundimage.png);
+  background-color: #0a1c27;
   font-family: 'Josefin Sans', 'Gill Sans', Calibri, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  color: #12303d;
+  color: #e3eef3;
 }
 
 #page {
@@ -58,7 +48,6 @@ body {
   padding: 10px;
 }
 
-/* ---------- Headings ---------- */
 h1, h2, h3 {
   font-family: 'Lobster Two', Georgia, serif;
   font-style: italic;
@@ -66,36 +55,34 @@ h1, h2, h3 {
 }
 
 h1 {
-  color: #0b4f6c;
+  color: #8fd0ee;
   font-size: 2.4rem;
   margin: 0 0 6px;
 }
 
 h2 {
-  color: #b23a1e;
+  color: #ff8a6b;
   font-size: 1.6rem;
   margin: 0 0 6px;
 }
 
 h3 {
-  color: #0b4f6c;
+  color: #8fd0ee;
   font-size: 1.25rem;
   margin: 0 0 10px;
-  border-bottom: 2px solid #b23a1e;
+  border-bottom: 2px solid #c4472a;
   padding-bottom: 4px;
 }
 
 h3.rate {
-  color: #b23a1e;
+  color: #ff8a6b;
 }
 
-/* ---------- Header ---------- */
 .credit {
   margin: 0;
-  color: #12303d;
+  color: #e3eef3;
 }
 
-/* ---------- Links column: buttons ---------- */
 .menu ul {
   list-style: none;
   padding: 0;
@@ -109,7 +96,7 @@ h3.rate {
 .menu a {
   display: block;
   padding: 8px 10px;
-  background-color: #0b4f6c;
+  background-color: #8a2a14;
   color: #ffffff;
   font-size: 14px;
   text-decoration: none;
@@ -117,21 +104,20 @@ h3.rate {
 
 .menu a:hover,
 .menu a:focus {
-  background-color: #b23a1e;
+  background-color: #c4472a;
   color: #ffffff;
 }
 
 a {
-  color: #0b4f6c;
+  color: #8fd0ee;
 }
 
-/* ---------- Text ---------- */
 p {
   margin-top: 0;
 }
 
 .hot {
-  color: #b23a1e;
+  color: #ff8a6b;
   font-weight: bold;
 }
 
@@ -145,10 +131,9 @@ li {
 }
 
 li::marker {
-  color: #b23a1e;
+  color: #ff8a6b;
 }
 
-/* ---------- Image ---------- */
 figure {
   margin: 0;
 }
@@ -164,23 +149,22 @@ img {
 figcaption {
   font-size: 13px;
   font-style: italic;
-  color: #3d5560;
+  color: #9fb8c4;
   margin-top: 6px;
 }
 
-/* ---------- Forms ---------- */
 fieldset {
   max-width: 300px;
   margin: 0 0 24px;
   padding: 4px 12px 8px;
   border: none;
   border-radius: 8px;
-  background-color: #eaf6fc;
-  color: #12303d;
+  background-color: #123b4f;
+  color: #e3eef3;
 }
 
 legend {
-  color: #0b4f6c;
+  color: #8fd0ee;
   font-weight: bold;
   padding: 0 8px;
 }
@@ -193,27 +177,31 @@ fieldset label {
 input[type="number"] {
   width: 80px;
   padding: 3px;
-  border: 2px solid #0b4f6c;
+  border: 2px solid #5aa9cc;
   border-radius: 6px;
-  background-color: #ffffff;
-  color: #12303d;
+  background-color: #0a1c27;
+  color: #e3eef3;
 }
 
 input[type="radio"] {
-  accent-color: #b23a1e;
+  accent-color: #ff8a6b;
 }
 
-/* ---------- Footer ---------- */
 #bottom .col {
   display: flex;
   justify-content: space-between;
   gap: 16px;
   padding-top: 10px;
   font-size: 14px;
-  color: #12303d;
+  color: #e3eef3;
 }
 
 #bottom p {
   margin: 0;
 }
 
+@media (max-width: 800px) {
+  [class*="col"] {
+    width: 100% !important;
+  }
+}
